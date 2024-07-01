@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- used website boxicon, googlefont -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aniruddha Singh Kushwah</div>
+            <div class="right">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contect me</a></li>
+            </div>
+        </nav>
+        <br>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection"> Hello! I am <span class="purple">Aniruddha Singh</span> an <span
+                    class="purple">Electronics </span>Engineer
+                <br>
+                <span id="element"></span>
+                <br>
+                <p>with a passion for technology and a proven track record of excellence in Python programming, and
+                    technical troubleshooting</p>
+                <br>
+                <span class="icon">
+                    <a href="https://www.facebook.com/profile.php?id=100011132916687" target="_main"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="inkedin.com/in/ani-kush" target="_main"><i class='bx bxl-linkedin'></i></a>
+                    <i class='bx bxl-gmail'></i>
+                </span>
+                <span class="btn-box">
+                    <button type="button" class="btn">Download cv</button>
+                    <button type="button" class="btn btn-2">Contect Me</button></span>
+            </div>
+
+            </div>
+            <div class="rightsection"><img src="Ani_profile.png" alt="Ani"></div>
+
+
+    </main>
+    <br>
+    <!-- ................about me..................... -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="image"><img src="Ani_profile_about.jpg" alt="Ani"></div>
+                <div class="about-col">
+                    <h1 class="subtitle">About Me</h1>
+                    <p><span class="purple">Greetings to all</span>. Aniruddha Singh Kushwah is who I am. My electrical
+                        engineering diploma from
+                        <span class="purple">dayalbagh educational institute</span> is now complete.
+                        Throughout my <span class="purple">three years of
+                            engineering</span>, I have
+                        worked on numerous projects such as a 220 volt regulated power supply, a
+                        water level indicator
+                        utilizing an IC 555 and Bluetooth, <span class="purple">a Python desktop assistant</span>, and
+                        more. I have also
+                        learned
+                        more about C and Java programming <span class="purple">languages</span>. I just received an
+                        internship with <span class="purple">Afame Technologies
+                        </span>. My interests include <span class="purple">drawing, cricket, and cubing.</span>
+                    </p>
+                    <div class="tab">
+                        <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                    </div>
+                    <div class="tab-content" id="skills">
+                        <ul>
+                            <li><span>Python</span></li>
+                            <li><span>Web Devlopment</span></li>
+                            <li><span>Electronics</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- ................projects..................... -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">Projects</h1>
+            <div class="project-list">
+                <div>
+                    <span class="icon-pro"><i class='bx bxl-visual-studio'></i></span>
+                    <h2>Desktop Assistant</h2>
+                    <p>Sidney the AI is a voice-activated desktop assistant designed to help with a variety of tasks,
+                        making your daily routine more efficient and enjoyable. This assistant can open applications,
+                        provide weather updates, translate phrases, take screenshots, set reminders, and perform web
+                        searches, all through voice commands.</p>
+                    <a href="https://github.com/Aniruddh1001001/sidney">learn more</a>
+                </div>
+                <div>
+                    <span class="icon-pro"><i class='bx bx-wifi'></i></span>
+                    <h2>Li-Fi</h2>
+                    <p>Li-Fi is a gadget that uses light to communicate data to another system; it requires two Arduino
+                        boards, one for the transmitter and one for the receiver. Along with other things, it has an LED
+                        7-segment display, a keypad, and an LDR sensor. We gained a lot of knowledge about
+                        microcontrollers and C programming from the group project. My responsibility in the group was to
+                        connect and program the Arduino.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <span class="icon-pro"><i class='bx bxs-bulb'></i></span>
+                    <h2>220 volts reguklated power supply</h2>
+                    <p>I designed a 220 volt regulated power supply in my first year of college, which is used to reduce
+                        voltage. employing a voltage regulator integrated circuit to produce a steady DC output after
+                        converting the AC current into DC via a rectifier and filtering the DC current. We obtained a DC
+                        wave shape once it was soldered.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ......................contect me........................ -->
+    <div id="contect">
+        <div class="container">
+            <div class="row">
+                <div class="contectleft">
+                    <h1 class="subtitle">Contect Me</h1>
+                </div>
+                <p><i class='bx bx-mail-send'></i>1234anikush@gmail.com</p>
+                <p><i class='bx bx-phone'></i><u>
+                        +91 8630483266
+                    </u></p>
+                <div class="iconForConnection">
+                    <a href="https://www.facebook.com/profile.php?id=100011132916687" target="_mian"><i
+                            class='bx bxl-facebook'></i></a>
+                    <a href="https://www.inkedin.com/in/ani-kush" target="_mian"><i class='bx bxl-linkedin'></i></a>
+                    <a href="1234anikush@gmailcom" target="_mian"><i class='bx bxl-gmail'></i></a>
+                </div>
+            </div>
+            <div>
+                <!-- .....blank...... -->
+            </div>
+            <div class="contectright">
+                <form>
+                    <input type="Text" name="Name" , placeholder="Your Name" required>
+                    <input type="E-mail" name="E-mail" ,placeholder="Mail Address" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <span class="btn-box">
+                        <button type="button" class="btn">Submit</button>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ..............footer................. -->
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Aniruddha Singh Kushwah. All Rights Reserved.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Aniruddh1001001" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Engineer', 'Coder', 'Web Devloper',],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(3, 3, 39);
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+    color: rgb(141, 141, 230);
+    font-size: 1.05rem;
+}
+
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: -3px 0px;
+    align-items: center;
+}
+
+.firstsection>div {
+    width: 35%;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+
+div .leftsection {
+    width: 50%;
+}
+
+.rightsection img {
+    width: 80%;
+    margin: 30px 0;
+}
+
+.purple {
+    color: rgb(151, 71, 225);
+}
+
+#element {
+    color: rgb(151, 71, 225);
+}
+
+p {
+    font-size: medium;
+}
+
+.icon {
+    display: flex;
+    width: 380px;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+.icon i {
+    color: #00b3ff;
+    padding: 7px;
+    border: 2px solid #00b3ff;
+    font-size: 26px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.icon i:hover {
+    color: aliceblue;
+    background-color: #00b3ff;
+    box-shadow: 0 0 15px;
+}
+
+.btn-box {
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.btn {
+    position: relative;
+    color: black;
+    width: 180px;
+    height: 48px;
+    border: #00b3ff;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+    z-index: 0;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00b3ff;
+    z-index: -1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s;
+}
+
+.btn-2,
+.btn:hover {
+    color: aliceblue;
+}
+
+.btn:hover::before,
+.btn-2::before {
+    transform-origin: right;
+    transform: scaleX(0);
+}
+
+
+.btn:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.btn-2:hover {
+    color: black;
+}
+
+/* ..................aboutme....................... */
+
+#about {
+    padding: 80px;
+    color: rgb(151, 71, 225);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image {
+    flex-basis: 35%;
+}
+
+.image img {
+    width: 75%;
+    border-radius: 15px;
+}
+
+.about-col {
+    flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.tab {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-link {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00b3ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px;
+    color: #00b3ff;
+}
+
+/* <!-- ................projects..................... --> */
+
+.projects {
+    padding: 30px 0;
+
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    margin-top: 14px;
+}
+
+.icon-pro i {
+    color: #00b3ff;
+    padding: 7px;
+    border: 2px solid #00b3ff;
+    font-size: 32px;
+    border-radius: 50%;
+    transition: .4s;
+    margin-bottom: 25px;
+}
+
+.icon-pro i:hover {
+    color: aliceblue;
+    background-color: #00b3ff;
+    box-shadow: 0 0 15px;
+}
+
+.project-list div {
+    background-color: rgb(2, 2, 52);
+    padding: 26px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform0.5s;
+    border-radius: 15px;
+}
+
+.project-list div h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.project-list div a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+    color: aliceblue;
+}
+
+.project-list div:hover {
+    background: #182d80;
+    transform: translateY(-10px);
+}
+/* ..............contect me................ */
+.contectleft{
+    flex-basis: 10%x;   
+}
+
+.contectright{
+    flex-basis: 60%;
+}
+.contectleft p {
+    margin-top: 30px;
+}
+
+.contectleft p i{
+    color: #182d80;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.iconForConnection {
+    margin-top: 30px;
+}
+
+.iconForConnection i {
+    color: #00b3ff;
+    font-size: 26px;
+    border-radius: 50%;
+    margin-right:50px;
+    display: inline-block;
+}
+
+.contectright form{
+    width: 50%;
+    
+}
+
+form input, textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #182d80;
+    padding: 15px;
+    margin: 15px 0;
+    color: blueviolet;
+    font-size: 19px;
+    border-radius: 6px;
+}
+/* Styles for the footer */
+footer {
+    background-color: rgb(2, 2, 52);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.social-media a:hover {
+    color: #00aced;
+}
+
+
